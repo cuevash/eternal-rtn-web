@@ -2,8 +2,8 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 module.exports = {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	theme: {
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  theme: {
     fontSize: {
       xs: [
         "0.75rem",
@@ -88,7 +88,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         screens: "url('/path-to/image.png')",
       }),
-       colors: {
+      colors: {
         black: "#273846",
 
         accent: {
@@ -152,17 +152,17 @@ module.exports = {
           900: "#493304",
         },
       },
-       fontFamily: {
+      fontFamily: {
         sans: ["Work Sans", ...defaultTheme.fontFamily.sans],
         display: ["Merriweather", ...defaultTheme.fontFamily.sans],
         mono: ["Space Mono", ...defaultTheme.fontFamily.mono],
       },
     },
   },
-	plugins: [
-		 require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/line-clamp'),
-		require('@tailwindcss/aspect-ratio'),
-	],
-}
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
+};
